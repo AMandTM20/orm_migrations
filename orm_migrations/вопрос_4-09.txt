@@ -1,0 +1,15 @@
+Я действовал по инструкции к этому заданию.
+
+Создал базу данных school
+Выполнил команды для создания миграций:
+1) python manage.py makemigrations,
+2). python manage.py migrate/
+В результате в базе данных school создались структуры таблиц school_student и school_teacher.
+Но загрузка исходные данные с помощью loaddata не получается.
+Выполнял команды: django-admin loaddata school.json и
+python manage.py loaddata school.json,
+но выдавалась ошибка:
+django.core.exceptions.ImproperlyConfigured: Requested setting LANGUAGE_CODE, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.
+
+Перевод:django.core.Exceptions.ImproperlyConfigured: запрошены ШАБЛОНЫ настроек, но параметры не настроены. Вы должны либо определить переменную среды DJANGO_SETTINGS_MODULE, либо вызвать settings.configure() перед доступом к настройкам.
+Мне не понятно, где все это делать и как.
